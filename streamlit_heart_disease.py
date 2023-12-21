@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
 
-model = pickle.load(open('estimasi_Mobile_Price_rediction.sav', 'rb'))
+model = pickle.load(open('heart_disease.sav', 'rb'))
 
-st.title('Mobile Price Prediksi')
+st.title('Prediksi Penyakit Jantung')
 
 age = st.number_input('Input usia')
 sex = st.number_input('Input jenis kelamin')
@@ -22,8 +22,8 @@ thal = st.number_input('Input tipe thalassemia')
 
 predict = ''
 
-if st.button('Estimasi Mobile'):
+if st.button('Prediksi Mempunyai penyakit jantung'):
     predict = model.predict(
         [[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]]
     )
-    st.write('Estimasi : ', predict)
+    st.write('Prediksi : ', predict)
