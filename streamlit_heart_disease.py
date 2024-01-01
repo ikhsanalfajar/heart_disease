@@ -6,19 +6,34 @@ model = pickle.load(open('heart_disease.sav', 'rb'))
 
 st.title('Prediksi Penyakit Jantung')
 
-age = st.text_input('Input usia')
-sex = st.text_input('Input jenis kelamin')
-cp = st.text_input('Input jenis nyeri dada')
-trestbps = st.text_input('Input tekanan darah')
-chol = st.text_input('Input kadar kolesterol')
-fbs = st.text_input('Input gula darah')
-restecg	 = st.text_input('Input hasil elektrokardiogram')
-thalach = st.text_input('Input Denyut jantung maksimum yang dicapai')
-exang = st.text_input('Input Angina akibat olahraga')
-oldpeak = st.text_input('Input oldpeak')
-slope = st.text_input('Input Kemiringan')
-ca = st.text_input('Input Jumlah pembuluh darah utama')
-thal = st.text_input('Input tipe thalassemia')
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    age = st.text_input('Input usia')
+with col1:
+    sex = st.text_input('Input jenis kelamin')
+with col1:
+    cp = st.text_input('Input jenis nyeri dada')
+with col1:
+    trestbps = st.text_input('Input tekanan darah')
+with col1:
+    chol = st.text_input('Input kadar kolesterol')
+with col2:
+    fbs = st.text_input('Input gula darah')
+with col2:
+    restecg	 = st.text_input('Input hasil elektrokardiogram')
+with col2:
+    thalach = st.text_input('Input Denyut jantung maksimum yang dicapai')
+with col2:
+    exang = st.text_input('Input Angina akibat olahraga')
+with col2:
+    oldpeak = st.text_input('Input oldpeak')
+with col3:
+    slope = st.text_input('Input Kemiringan')
+with col3:
+    ca = st.text_input('Input Jumlah pembuluh darah utama')
+with col3:
+    thal = st.text_input('Input tipe thalassemia')
 
 
 predict = ''
