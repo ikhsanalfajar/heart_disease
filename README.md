@@ -343,7 +343,7 @@ pickle.dump(KNN,open(filename,'wb'))
 
 ## Deployment
 
-[My Estimation App](https://appmobileprice-aditya.streamlit.app/).
+[My Estimation App](https://heartdisease-ikhsan.streamlit.app/).
 
 ![Alt text](app_streamlit.png)
 
