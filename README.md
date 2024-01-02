@@ -295,7 +295,7 @@ berhasil!!, sekarang modelnya sudah selesai, mari kita export sebagai sav agar n
 
 ## Evaluation
 
-Disini saya menggunakan R2 score sebagai metrik evaluasi.
+Disini saya menggunakan f1 score sebagai metrik evaluasi.
 
 F1 score adalah metrik evaluasi yang digunakan dalam permasalahan klasifikasi untuk mengukur keseimbangan antara presisi (precision) dan recall. F1 score menggabungkan kedua metrik ini menjadi satu skor tunggal dan berguna ketika keseimbangan antara false positives dan false negatives penting dalam konteks tertentu.
 
