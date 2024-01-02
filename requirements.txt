@@ -1,6 +1,6 @@
 numpy
-pandas
-scikit-learn==1.3.2
+pip
+pandas==1.5.1
 streamlit
-matplotlib
+scikit-learn==1.1.3
 seaborn
